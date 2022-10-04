@@ -14,7 +14,7 @@ public interface ProductService {
     Call<ResponseBody> deleteProduct(@Path("id") int id);
 
     @PUT("products")
-    Call<Product> modifyProduct(@Body Product modifyProductRequest);
+    Call<Product> modifyProduct(@Body String modifyProductRequest);
 
     @GET("products/{id}")
     Call<Product> getProductById(@Path("id") int id);
