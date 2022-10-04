@@ -25,13 +25,27 @@ public class GetCategoryTest {
     @SneakyThrows
     @Test
     void getCategoryByIdPositiveTest() {
-        Response<GetCategoryResponse> response = categoryService.getCategory(id).execute();
+        Response<GetCategoryResponse> response = categoryService.getCategory(1).execute();
 
         assertThat(response.isSuccessful(), CoreMatchers.is(true));
-        assertThat(response.body().getId(), equalTo(id));
+        assertThat(response.body().getId(), equalTo(1));
         assertThat(response.body().getTitle(), equalTo("Food"));
         response.body().getProducts().forEach(product ->
                 assertThat(product.getCategoryTitle(), equalTo("Food")));
+
+
+    }
+
+    @SneakyThrows
+    @Test
+    void getCategoryByIdPositiveTestTwo() {
+        Response<GetCategoryResponse> response = categoryService.getCategory(2).execute();
+
+        assertThat(response.isSuccessful(), CoreMatchers.is(true));
+        assertThat(response.body().getId(), equalTo(2));
+        assertThat(response.body().getTitle(), equalTo("Electronic"));
+        response.body().getProducts().forEach(product ->
+                assertThat(product.getCategoryTitle(), equalTo("Electronic")));
 
 
     }

@@ -34,7 +34,6 @@ public class GetProductsTest {
         Response<ResponseBody> response = productService.getProducts().execute();
         assertThat(response.isSuccessful(), CoreMatchers.is(true));
 
-
     }
 
     @SneakyThrows

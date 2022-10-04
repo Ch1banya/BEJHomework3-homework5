@@ -19,12 +19,13 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
 
-public class ModifyProductTest {
+public class CreateProductTestTwo {
 
     static ProductService productService;
     Product product = null;
     Faker faker = new Faker();
     int id;
+
     @BeforeAll
     static void beforeAll() {
         productService = RetrofitUtils.getRetrofit()
@@ -35,18 +36,18 @@ public class ModifyProductTest {
     void setUp() {
         product = new Product()
                 .withTitle(faker.food().ingredient())
-                .withCategoryTitle("Food")
-                .withId(1) //Milk
-                .withPrice(44);
+                .withCategoryTitle("Electronic")
+                .withPrice(9999);
 
     }
-
     @SneakyThrows
     @Test
-    void ModifyProductTestOne() {
-        Response<Product> response = productService.modifyProduct(product).execute();
-        assertThat(response.body().getPrice(), equalTo(44));
-        assertThat(response.isSuccessful(), CoreMatchers.is(true));
+    void createProductInFoodCategoryTest() {
+        Response<Product> response = productService.createProduct(product)
+                .execute();
+        id =  response.body().getId();
+        assertThat(response.body().getCategoryTitle(), equalTo("Electronic"));
+        assertThat(response.body().getPrice(), equalTo(9999));
 
 
     }
@@ -54,9 +55,10 @@ public class ModifyProductTest {
     @SneakyThrows
     @AfterEach
     void tearDown() {
-        Response<ResponseBody> response = productService.deleteProduct(1).execute();
+        Response<ResponseBody> response = productService.deleteProduct(id).execute();
         assertThat(response.isSuccessful(), CoreMatchers.is(true));
     }
+
 
 
 }

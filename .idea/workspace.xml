@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2d6a2a7-26a0-4804-9eaa-fd94ef2283e7" name="Changes" comment="Homework 5 in progress">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Homework5/GetProductsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Homework5/CreateProductTestTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Homework5/api/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Homework5/api/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Homework5/GetProductByIdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Homework5/GetProductByIdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Homework5/GetCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Homework5/GetCategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Homework5/GetProductsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Homework5/GetProductsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Homework5/ModifyProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Homework5/ModifyProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="homework4" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,8 +70,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.ModifyProductTest.ModifyProductTestOne">
-    <configuration name="CreateProductTest.createProductInFoodCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CreateProductTestTwo">
+    <configuration name="CreateProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BEJHomework1" />
       <extension name="coverage">
         <pattern>
@@ -79,13 +81,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="Homework5" />
       <option name="MAIN_CLASS_NAME" value="Homework5.CreateProductTest" />
-      <option name="METHOD_NAME" value="createProductInFoodCategoryTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetProductByIdTest.tearDown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateProductTestTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BEJHomework1" />
       <extension name="coverage">
         <pattern>
@@ -94,14 +95,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Homework5" />
-      <option name="MAIN_CLASS_NAME" value="Homework5.GetProductByIdTest" />
-      <option name="METHOD_NAME" value="tearDown" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="Homework5.CreateProductTestTwo" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetProductsTest.getProductsTestOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetCategoryTest.getCategoryByIdPositiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BEJHomework1" />
       <extension name="coverage">
         <pattern>
@@ -110,14 +110,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Homework5" />
-      <option name="MAIN_CLASS_NAME" value="Homework5.GetProductsTest" />
-      <option name="METHOD_NAME" value="getProductsTestOne" />
+      <option name="MAIN_CLASS_NAME" value="Homework5.GetCategoryTest" />
+      <option name="METHOD_NAME" value="getCategoryByIdPositiveTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModifyProductTest.ModifyProductTestOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetCategoryTest.getCategoryByIdPositiveTestTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BEJHomework1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Homework5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Homework5" />
+      <option name="MAIN_CLASS_NAME" value="Homework5.GetCategoryTest" />
+      <option name="METHOD_NAME" value="getCategoryByIdPositiveTestTwo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModifyProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BEJHomework1" />
       <extension name="coverage">
         <pattern>
@@ -127,24 +143,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Homework5" />
       <option name="MAIN_CLASS_NAME" value="Homework5.ModifyProductTest" />
-      <option name="METHOD_NAME" value="ModifyProductTestOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ModifyProductTest.getProductByIdTestOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BEJHomework1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Homework5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Homework5" />
-      <option name="MAIN_CLASS_NAME" value="Homework5.ModifyProductTest" />
-      <option name="METHOD_NAME" value="getProductByIdTestOne" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ModifyProductTest.ModifyProductTestOne" />
-        <item itemvalue="JUnit.CreateProductTest.createProductInFoodCategoryTest" />
-        <item itemvalue="JUnit.ModifyProductTest.getProductByIdTestOne" />
-        <item itemvalue="JUnit.GetProductByIdTest.tearDown" />
-        <item itemvalue="JUnit.GetProductsTest.getProductsTestOne" />
+        <item itemvalue="JUnit.CreateProductTestTwo" />
+        <item itemvalue="JUnit.CreateProductTest" />
+        <item itemvalue="JUnit.GetCategoryTest.getCategoryByIdPositiveTest" />
+        <item itemvalue="JUnit.GetCategoryTest.getCategoryByIdPositiveTestTwo" />
+        <item itemvalue="JUnit.ModifyProductTest" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664799059737</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Homework 5 in progress">
+      <created>1664884012277</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664884012277</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
